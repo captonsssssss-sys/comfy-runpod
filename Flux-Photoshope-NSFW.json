@@ -1,0 +1,2561 @@
+{
+  "id": "2ead7ee0-3015-431e-accb-8ded168409db",
+  "revision": 0,
+  "last_node_id": 231,
+  "last_link_id": 217,
+  "nodes": [
+    {
+      "id": 25,
+      "type": "FluxResolutionNode",
+      "pos": [
+        2108.4039989094576,
+        969.0529401419726
+      ],
+      "size": [
+        361.89251864804396,
+        101.47443132202079
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            195
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            196
+          ]
+        },
+        {
+          "name": "aspect_ratio",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "image-size-tools",
+        "ver": "0.3.4",
+        "Node name for S&R": "FluxResolutionNode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "1080×1920 (9:16) - Vertical HD"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 26,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2109.8443533268364,
+        1170.6502405994268
+      ],
+      "size": [
+        363.35677299739086,
+        330.88768332695827
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_on": "#FF007F",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 199
+        }
+      ],
+      "outputs": [
+        {
+          "color_on": "#FFB6C1",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            197
+          ]
+        }
+      ],
+      "title": "Positive-Prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.15.1",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "Photorealistic close-up photograph taken with a standard iPhone camera (natural smartphone quality, good sharpness, realistic lighting, slight natural grain and depth of field, no professional studio look, exactly like a casual iPhone 15/16 snapshot), cozy indoor living room with white sofa, colorful patterned pillows (red-blue-white geometric design and solid yellow pillow), wooden floor, red patterned rug, and warm glowing table lamps in the background. A beautiful young woman with long straight light brown hair, light skin, and seductive eyes is lying on her stomach on the white sofa, back arched, ass raised high and pushed directly toward the camera, head turned back over her shoulder looking at the lens with a playful expression. She is completely nude except for black lace-top thigh-high stockings. Extreme high-definition uncensored close-up focus on her vagina from behind: detailed pink inner and outer labia with natural folds, wrinkles, and ruffled texture, slit slightly parted and glistening with subtle natural moisture and creamy highlights, visible perineum and anus directly above, realistic skin pores, subtle sheen and wetness, every intimate anatomical detail sharp and explicit with no blurring, no censorship, no pixelation, full anatomical visibility in perfect HD clarity. Natural warm indoor lighting, realistic skin tones and shadows exactly as captured by an iPhone camera."
+      ],
+      "color": "#3b596c",
+      "bgcolor": "#274558"
+    },
+    {
+      "id": 27,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2109.915433585661,
+        1553.939481343354
+      ],
+      "size": [
+        361.390283358925,
+        147.87775469244764
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_on": "#FF007F",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 200
+        }
+      ],
+      "outputs": [
+        {
+          "color_on": "#FFB6C1",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            198
+          ]
+        }
+      ],
+      "title": "Negative-Prompt",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.15.1",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.7",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "(worst quality, low quality:1.4), score_1, score_2, score_3, score_4, blurry, lowres, doll, child, symbol, text, watermark, logo, censored, makeup, white lighting, tongue, pubic hair, tan lines, licking, transgender, plastic, (naked, nude:1.5), smooth skin, plastic skin, airbrushed skin, waxy skin, bad hands, extra fingers, missing fingers, fused fingers, mutated hands, malformed hands, extra limbs, deformed hands, no chicken skin"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 220,
+      "type": "darkHUB",
+      "pos": [
+        1650.8072221805967,
+        909.7964639634978
+      ],
+      "size": [
+        428.8215942679559,
+        803.7613623627817
+      ],
+      "flags": {
+        "resizable": true,
+        "pinned": true,
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "darkhub-prompt-library",
+        "ver": "6f271af4d2c7db405a3377c6e5585b36a1edbc53",
+        "Node name for S&R": "darkHUB",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        },
+        "aux_id": "Cyber05CC/dark-HUB"
+      },
+      "widgets_values": [
+        "studio-product",
+        "https://raw.githubusercontent.com/Cyber05CC/dark-HUB/main/catalog/prompts.json",
+        "Photorealistic close-up photograph taken with a standard iPhone camera (natural smartphone quality, good sharpness, realistic lighting, slight natural grain and depth of field, no professional studio look, exactly like a casual iPhone 15/16 snapshot), cozy indoor living room with white sofa, colorful patterned pillows (red-blue-white geometric design and solid yellow pillow), wooden floor, red patterned rug, and warm glowing table lamps in the background. A beautiful young woman with long straight light brown hair, light skin, and seductive eyes is lying on her stomach on the white sofa, back arched, ass raised high and pushed directly toward the camera, head turned back over her shoulder looking at the lens with a playful expression. She is completely nude except for black lace-top thigh-high stockings. Extreme high-definition uncensored close-up focus on her vagina from behind: detailed pink inner and outer labia with natural folds, wrinkles, and ruffled texture, slit slightly parted and glistening with subtle natural moisture and creamy highlights, visible perineum and anus directly above, realistic skin pores, subtle sheen and wetness, every intimate anatomical detail sharp and explicit with no blurring, no censorship, no pixelation, full anatomical visibility in perfect HD clarity. Natural warm indoor lighting, realistic skin tones and shadows exactly as captured by an iPhone camera.",
+        "remote_first",
+        ""
+      ],
+      "color": "#282d41",
+      "bgcolor": "#14192d",
+      "shape": "default"
+    },
+    {
+      "id": 223,
+      "type": "9bc375cd-ee33-45eb-a435-6c12370b2664",
+      "pos": [
+        2500.4622020077145,
+        909.2757075842188
+      ],
+      "size": [
+        368.79025566852033,
+        803.0173065506293
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_on": "#FFB7C5",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 195
+        },
+        {
+          "color_on": "#FFB7C5",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 196
+        },
+        {
+          "color_on": "#FFB6C1",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 197
+        },
+        {
+          "color_on": "#FFB6C1",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 198
+        }
+      ],
+      "outputs": [
+        {
+          "color_on": "#FF007F",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            199,
+            200
+          ]
+        },
+        {
+          "color_on": "#FF69B4",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            203
+          ]
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "proxyWidgets": [
+          [
+            "24",
+            "width"
+          ],
+          [
+            "24",
+            "height"
+          ],
+          [
+            "21",
+            "seed"
+          ],
+          [
+            "2",
+            "text"
+          ],
+          [
+            "14",
+            "text"
+          ],
+          [
+            "1",
+            "seed"
+          ],
+          [
+            "13",
+            "seed"
+          ],
+          [
+            "4",
+            "seed"
+          ]
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "width": true,
+            "height": true
+          },
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 229,
+      "type": "SaveImage",
+      "pos": [
+        2909.125206662533,
+        1210.111947739324
+      ],
+      "size": [
+        380.451515595651,
+        481.1729164671383
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 203
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.16.4",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "darkHUB/png"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 230,
+      "type": "MarkdownNote",
+      "pos": [
+        2900.3153949853945,
+        954.4139056170161
+      ],
+      "size": [
+        398.8615686749604,
+        115.81087628902696
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Info",
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "### dark HUB: @darken_HUB\n### Noguti AI OFM: @NogutiAIOFM\n----------------------------\n### Telegram Team:    https://t.me/+gnGcP24LfXk4ZWEy\n----------------------------"
+      ],
+      "color": "#4b4776",
+      "bgcolor": "#373362"
+    },
+    {
+      "id": 231,
+      "type": "Label (rgthree)",
+      "pos": [
+        2891.177249051987,
+        381.7658735779832
+      ],
+      "size": [
+        439.84375,
+        440
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                                                                                                                                                                                \n                                                                                                                                                                                                                                                █                                                                                                                                                               \n                                                                                                                                                                                                                                              ███                                                                                                                                                               \n                                                                                                                                                                                                                                             ██▓██                                                                                                                                                              \n                                                                                                                                                                                                         ██                                 ██▓▓▓█                                                                                                                                                              \n                                                                                                                                                                                                          █▓██                             ██▓▓▓▓█                                                                                                                                                              \n                                                                                                                                                                                                          ██▓▓███                        ███▓▓▓▓▓█                                                                                                                                                              \n                                                                                                                                                                                                           ██▓▓▓███                      █▓▓▓▓▓▓▓█                                                                                                                                                              \n                                                                                                                                                                                                            █▓▓▓▓▓▓▓███                ██▓▓▓▓▓▓▓▓█                                                                                                                                                              \n                                                                                                                                                                                                            ██▓▓▓▓▓▓▓▓▓▓████          ██▓▓▓█▓█▓▓██                                                                                                                                                              \n                                                                                                                                                                                                             ██▓▓▓▓▓███▓▓▓▓▓██       ██▓▓▓█▓█▓▓▓▓█                                                                                                                                                              \n                                                                                                                                                                                                               █▓▓▓▓▓▓█▓▓▓▓▓▓▓██    ██▓▓▓▓▓█▓▓▓▓██                                                                                                                                                              \n                                                                                                                                                                                                                █▓▓▓▓▓▓███▓▓▓▓▓██  ██▓▓▓▓▓█▓▓▓▓██                                                                                                                                                               \n                                                                                                                                                                                                                 ██▓▓▓▓▓▓▓██▓▓▓▓█ ██▓▓▓▓▓██▓▓▓██                                                                                                                                                                \n                                                                                                                                                                                                                  ███▓▓▓███████▓███▓▓▓▓▓▓█▓▓▓██                                                                                                                                                                 \n                                                                                                                                                                                                                 ████▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓█▓▓▓██                                                                                                                                                                  \n                                                                                                                                                                                                              ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓██                                                                                                                                                                   \n                                                                                                                                                                                                          ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                                                                                                                                                                 \n                                                                                                                                                                                                      █████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓███                                                                                                                                                              \n                                                                                                                                                                                                   ████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███                                                                                                                                                           \n                                                                                                                                                                                                 ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓███                                                                                                                                                        \n                                                                                                                                                                                              ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███                                                                                                                                                     \n                                                                                                                                                                                            ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓█▓▓▓▓██                                                                                                                                                   \n                                                                                                                                                                                          ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                                                                                                                                                \n                                                                                                                                                                                        ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███                                                                                                                                             \n                                                                                                                                                                                      ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                                                                                                                                           \n                                                                                                                                                                                     ██▓▓▓▓▓▓██▒░░░░▒█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                                                                                                                                         \n                                                                                                                                                                                   ██▓▓▓▓▓▓▓░░░░░░░▒▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                                                                                                                                        \n                                                                                                                                                                                 ███▓▓▓▓▓▓░░░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒░▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                                                                                                                                       \n                                                                                                                                                                                █▓▓▓▓▓▓▓▒░░░░░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓▓▓▓▓▒░▒▓▓▓▓▓▒░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                                                                                                                                      \n                                                                                                                                                                               █▓▓▓▓▓▓▓▓░░░░░░█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                                                                                                                                      \n                                                                                                                                                                             ██▓▓▓▓▓▓▓▓▒░░░░░█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒██                                                                                                                                     \n                                                                                                                                                                             █▓▓▓▓▓▓▓▓▓▒░░░░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                                                                                                                                     \n                                                                                                                                                                            █▓▓▓▓▓▓▓▓▓▓▒░░░░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░▒▓▓▓▓▓▒░▒▓▓▓▓▓▓▒░▒▓▓▓▓▓▒░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                                                                                                                                     \n                                                                                                                                                                           ██▓▓▓▓▓▓▓▓▓▓▓░░░░░█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▒▓▒▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                                                                                                                                    \n                                                                                                                                                                         ▓██▓▓▓▓▓▓▓▓▓▓▓▓▒░░░░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓                                                                                                                                   \n                                                                                                                                                                         ███▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███                                                                                                                                   \n                                                                                                                                                                         ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░▒▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                                                                                                                                   \n                                                                                                                                                                         ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░▒▓▓▓▓▓▓▓▓░░▒▓▓▓▓▓░░▓▓▓▓▓▓▒░▒▓▓▓▓▓▓▓▒░▒▓▓▓▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░██                                                                                                                                  \n                                                                                                                                                                        █▓░░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓░░░▒█                                                                                                                                  \n                                                                                                                                                                        █▓░░░░░▒▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▒▒░░░░░██                                                                                                                                 \n                                                                                                                                                                        ██░░░░░░░░░░░▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▓█▓▒░░░▒▒▒▒▒░░░░▓█                                                                                                                                 \n                                                                                                                                                       ███              ██▒░░░░░░░░░░░░░░▒▒▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▒▒░░░░░░░░▒▒▒▒▒░░░░░▓█                                                                                                                                 \n                                                                                                                                                        ████            ██▒░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▓▒▒▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░░░░░░░░░░░░░▒▒▒▒▒▒░░░░░▒█       ██                                                                                                                        \n                                                                                                                                                          ██████        ██▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▓▓██▓▓▓▓▓▓▓▓▓█▓▓▒░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░░░░░░░░▒█     ████                                                                                                                        \n                                                                                                                                                           ██████████   ██▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░░░░░░░░░▒█  ███████                    ████                                                                                                \n                                                                                                                                                             █████████████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░░░░░░░░░░▒██████████                 ███████                                                                                                \n                                                                                                                                                          ████████████████▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒░░░░░░░░░░░░▒██████████             ███████████                                                                                                 \n                                                                                                                                                    ██████████████████████▓▓▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░░░░░░░░░░▓▓▓▓█████████       ████████████████                                                                                                   \n                                                                                                                                                 ██████████████████████████▓▓▓▓█▓▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░░░░░░░▒▓▓▓▓▓▓▓▓███████ ██████████████████████                                                                                                    \n                                                                                                                                               ███████████████████████████▓█▓▓▓▓█▓▓▓▓█▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░░░░░░▓▓▓▓██▓▓▓▓▓▓████████████████████████████                                                                                                      \n                                                                                                                                             █████████████████████████████▓▓▓▓▓▓▓▓▓██▓▓▓██▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒░░░░▓▓▓██▓▓▓▓▓▓▓▓▓▓█████████████████████████                                                                                                         \n                                                                                                                                           █████████████      ████████████▓▓▓▓▓▓▓▓▓▓▓▒▓▓▓▓█▓▓▓█▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░▒▒▒▒▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓███████████████████████                                                                                                           \n                                                                                                                                         ██████████          ██████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓▓▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████████████████████                                                                                                              \n                                                                                                                            ██          ██████            ██████████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓██████▓▓▓▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓██▓▓▓▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███████████████████████                                                                                                           \n                                                                                                                             ██████                    ██████████████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████████████████████████    ███████████████                                                                                     \n                                                                                                                              ███████████          ██████████████████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█████████████████████████████    █                                                                                                \n                                                                                                                                 ████████████████████████████████████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████████████████████████████████                                                                                                  \n                                                                                                                                   ████████████████████████████████████████▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████████████████████████████████                                                                                               \n                                                                                                                                      █████████████████████████████████████░▓░▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓░██████████████████████████████████████                                                                                            \n                                                                                                                                            ███████████████████████████████▓▒▒░▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒░▒█████████████████████████████████████████                                                                                         \n                                                                                                                                         ███████████████████████████████████▓▓▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒░▓████████████████████████████████████████████                                                                                      \n                                                                                                                                       ██████████████████████████████████████▓▒░░▓▒▒▒▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓█▓▓▒▓▒▓░▒████████████████████████████████████████████████                                                                                   \n                                                                                                                                     ████████████████████████████████████████▓█░░▓▓░░░░░░▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█████▒▓█▒▒▒▒█████████████████████████████████████████████████████    █████                                                                      \n                                                                                                                                   ████████████████████████████████████████████▒░▒█▒░░░░░░░░░▒▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████▓▒▓▒▒▒▒███████████████████████████████████████████████████████████                                                                          \n                                                                                                                                 ██████████████████████████████████████████████▓░░█▓░░░░░░░░░░░░░▒▒▓▓▓▓████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓█████▒▓▒▒▒▒███████████████████████████████████████████████████████████████                                                                       \n                                                                                                                               ███████████████  ████████████████████████████████▒░▒█▓▒░░░░░░░░░░░░░░▒▒▒▒▒▒░▒██░░░▒▒▒▒▓▓█▓█████████████████▓▒▓█▒▒▒▒▓▓▓▓▒▒░░░░░░██████▒▒▒▒░▓▒███████████████████████████████████████████████████████████████████████                                                              \n                                                                                                                             ████████████     ██████████████████████████████████▓░░▓████▓▒▒░░░░░░░░░░▒▒▒▒▒▒▒▒▒▓█▒░░░░░░░░░░░░░░░░░░░░░░▒▓██▓▒░░░░░░░░░░░░░░░▒▒██████░▒▒░▓▓█████████████████████████████████████████████████████████████████████████████                                                         \n                                                                                                                            █████████        ███████████████████████████████████▓░░▒██████████▓▓▒░░░░░░▒▒▒▒▒▒▒▒▒▓█▒░░░░░░░░░░░░░░░░░░▓██▓▒░░░░░░░░░░░░░░░░░░░▓██████░▓░▒██████████████████████████████████████████████████████████████████████████                                                              \n                                                                                                                           █████            ████████████████████████████████████▓░░░▓██████████████████▓░░░▒▒▒▒▒▒▒██░░░░░░░░░░░░░░░▓██▒░░░░░░░░░░░░░░░░░░▒▓██████████░▒▓████████████████████████████▓▒▓██▓▓██████████████████████████████                                                                       \n                                                                                                                          █████           ██████████████████████████████████████▓▒░░▒▓░▓██████████████████████▓▒▒▒▒▒▓░░░░░░░░░░░░░▒▓▒░░░░░░░░░░▒▒▒▓█████████████████▒▒▒████████████████████████████▓▒▒▒▒▒▒▓▓▓██████████████████████████████                                                                     \n                                                                                                                          ███           ████████████████████████████████████████▓▒░░░▓▒▒▒▒█████████████████████████▓░░░░░░░░░░░░░░░░░░░░▒▓█████████████████████████▓▓░▒████████████████████████████▓▒▒▒▒▒▒▒▒▓▓███████████████████████████████                                                                   \n                                                                                                                          ███         ███████████████████████████████████████████▓░░░▒█░░░▒██████████████████████████▒░░░░░░░░░░░▓░░▒██████████████████████████████▓▒░▒████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██████████████████████████████                                                                \n                                                                                                                                  ███████████████████████████████████████████████▓░░░░▓▒░░░███████████████████████████▒▒▒▒▒▒░░▒▒█▓░▒███████████████████████████████▒▒▒████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▓▓████████████████████████████                                                              \n                                                                                                                              ████████████████████████████████████████████████████░░░░░▓░░░▒███████████████████████████████████████████████████████████████████████▓▓████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▓▓███████████████████████████                                                            \n                                                                                                                         █████████████████████████████████████████████████████████░░░░░▓░░░░▓███████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▓▒▒▒▒▒▒▒▒▓▓▓████████████████████████                                                          \n                                                                                                                        █████████████████████████████████████████████████████████████▒░▓░░░░▒██████████████████████████▒░▒▒▓▓████████████████████████████████████▒▒████████████████████████████▓▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓████████████████████                                                        \n                                                                                                                    ██████████████████▓▒░░░▒████████████████████████████████████▓████▓░▒░░░░░▒▒▓█████████████████████▒▒▒▒░░░░░░░░▒█████████████████████████████▓▓▒▒▓██████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓███████████████████                                                      \n                                                                                                               ███████████████████████▓░░░░░▒███████████████████████████████████▓░████░▒░░░░░░░░░░▓████████████████▒░▒▒▒▒░░░░░░░░░░░█████████████████████▓▒███▓▓▒░▒▓██████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▓██████████████████                                                    \n                                                                                                  ████████████████████████████████████▓░░░░░▒▓███████████████████████████████████▒▒▓▓▒░▒▒░░░░░░░░░░░░░▒▓▓█████████▒░░▒▒▒▓░░░░░░░░░░░░░▓█████████████▓▒░░░▒████▓░░░▒██████████████████████████▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▓███████████████████                                                   \n                                                                                                 █████████████████████████████████████▒░▓░░░░░▓███████████████████████████████████░░░░░░▒▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▓░░░░░░░░░░░░░░░░▒▒▓▓▒▒▒░░░░░░░░▒████▒░░░░██████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒█████████████████████                                                  \n                                                                                                               ████████████████████████▓░░░░░░▒███████████████████████████████████░░░░░░░█▓▓░░░░░░░░░░░░░░░░░░░░░░░░░▒▒░▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓███▒▒░░░▒██████████████████████████▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓███████████████████████                                                 \n                                                                                                           ██████████████████████████▓▒░░░░░░░▓███████████████████████████████████▒░░░░░░▓▒▒▓▒░░░░░░░░░░░░░░░░░░░░░░░▒▒░▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓██▓░▓▒░░░██████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓█████████████████████████                                                \n                                                                                                         ████████████████████████████▓░░░░░░░░████████████████████████████████████▓░░░░░░▓▒▒▒▓▓░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓██▒▒▓▓░░░▒█████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓██████████████████████████                                               \n                                                                                                      ███████████████████████████████▒░░░░░░░▒█████████████████████████████████████░░░░░░░█▒▒░▓▓░░░░░░░░░░░░░░░░░░░░░░░░░▓░░░░░░░░░░░░░░░░░░░░░░░░░░░▓█▒▒▓▓▓▒░░░▒████████████████████████▓▓▓▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒████████████████████████████                                              \n                                                                                                    █████████████████████████████████░░░░░░░░▓█████████████████████████████████████▒░░░░░░▓▒▒▒▒▓█▒░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░░░░░░░░░░░░░░░░░░░░▒▓▒░▒▓▒▒▓░░░░▓███████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██████████████████████████████ █                                           \n                                                                                                  ██████████████████████████████████▓░░░░░░░▒▓██████████████████████████████████████▒░░░░░░▓▒▒▒▓▓▒▓░░░░░░░░░░░░░░░░░░▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▒░█▒░░░░███████████████████████▓▒▓▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓█████████████████████████████████                                           \n                                                                                                 ███████████████████████████████████▒░░░░░░░▒████████████████████████████████████████░░░░░░▒▒▒▒▒█▓▓█░░░░░░░░░░░░░░░░░░▒▒▓░░░░░░░░▒▒░░░░░░░░░░░░░░░░░▒█▒▒░░█░░░░░███████████████████████▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████                                         \n                                                                                               ████████████████████████████████████▓░░░░░░░░▒█████████████████████████████████████████░░░░░░▒▒▒▒▒█▓▒█▒░░░░░░░░░░░░░░░░░▒▒▓▒░░░▒▓▒▒░░░░░░░░░░░░░░░░░▒▓▒▒░░▓▒░░░░▒██████████████████████▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████                                     \n                                                                                              █████████████████████████████████████▒░▒▒░░░░░▓██████████████████████████████████████████░░░░░░▓▒▒▒▒▓▒▓▓▓░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░▒█▒▒▒░░▒█░░░░░▒█████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████  ██████████                                   \n                                                                                             ██████████████████████████████████████▒░░░░░░░░███████████████████████████████████████████▓░░░░░░▓▒▒▒▓▒▒▒▓█░░░░░░░░░░░░░░░░░░░▒░░░░░░░░░░░░░░░░░░░░▓▓▒▒▒░░░▒▓░░░░░▓████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████                                              \n                                                                                            ███████████████████████████████████████▒░░░░░░░░████████████████████████████████████████████▓░░░░░░▒▒▒▒▓▒▒▒▓█▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒█▒▒▒▒░░░░▓▒░░░░░▓███████████████████▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████                                             \n                                                                                           ████████████████████████████████████████▒░░░░░░░▒█████████████████▒▒▒▒█████████████████████████░░░░░░▓▒▒▒▒▒▒▒▒▓▓░░░░▒▒▒▒▒▓▓▒▒░░░░░░░░░░░░░░░░░░░░░▓▓▒▒▒▒░░░░▒▓░░░░░░▓██████████████████▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓█████████████████████████████████████                                            \n                                                                                          ████████████████████████████████████████▓░░░░░░░░░████████████████▒░▒▒░▒█████████████████████████░░░░░░▓▒▒▒▒▒▒▒▓▒█░░░░░░░░░░░░░░░▒▓█▓▒░░░░░░░░░░░▒▓▒▒░░░░░░░░▒▒░░░░░░██████████████████▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████                                            \n                                                                                          ████████████████████████████████████████▒░░░░░░░░▒███████████████▓░░░░░░▒████████████████████████▓░░░░░░▓▒▒▒▒▒▒▒▒▒▓▓░░░░░░░▒███▓▓▓▒▒▒░░░░▒▒░░░░░▓▒▒▒░░░░░░░▒▓▓░░░░░░███████████████████▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████████████████████████████████████                                           \n                                                                                         ████████████████████████████████████████▓░░░░░░░░░░███████████████▒░▒░░░░▒█████████████████████████▓░░░░░░▓▓▒▒▒▒▒▒▒▒▒▓░░░░░░░░▒░░░░▒▒▒▒░░░░░░░░▒█▒▒░░░░░░▒▓▓▒░░░░░░▒███████████████████▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████                                          \n                                                                                       ██████████████████████████████████████████▒░░░░░░░░░░███████████████▒░░░░░░░███████████████████████████░░░░░░▓█▒▒▒▒▒▒▒▒▓▒░░░░░░░░░░░░░░░░░░░░░░░▓▓▒▒░░░░░▒██░░░░░░░▒████████████████████▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████████████████████████████████████████                                         \n                                                                                     ███  ███████████████████████████████████████░░░░░░░░░░▒██████████████▒░░░░░░░▒████████████████████████████▒░░░░░▓█▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░▒▓▒▒▒░░░░▒▓▒░░░░░░░▒█████████████████████▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████                                        \n                                                                                    ██  ████████████████████████████████████████▒░░░░░░░░░░░█████████████▒░░░░░░░▒██████████████████████████████░░░░░░▒█▓▒▒▒▒▒▒▒▒▒▓▓▓▒▒▒░░░░░░░░░░░░▓▒▒▒▒▒░▒▒▒░░░░░░░░░▓█████████████████████▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████                                        \n                                                                                       ████████████████████████████████████████▒░░░░░░░░░░░░████████████▓░░░░░░░░████████████████████████████████▒░░░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▓██████████████████████▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████                                       \n                                                                                      ████████████████████████████████████████▓░░░░░░░░░░░░░████████████▒░░░░░░░██████████████████████████████████▒░░░░░░▓█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░▓███████████████████████▒▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████                                      \n                                                                                     ████████████████████████████████████████▓░░░░░░░░▒▒▒▒▒▒▒██████████▒░░░░░░░▓███████████████████████████████████▒░░░░░░▒█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓░░░░░░░░░░░▓████████████████████████▓▓▓▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████                                     \n                                                                                   █████████████████████████████████████████▒░░░░░░░░░▓▓█▓▒▓▓▓▒▒▒▒▒▒▒█▒▒░░░░░░▒████████████████████████████████████▓░░░░░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓░░░░░░░░░░▒██████████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████                                     \n                                                                                  █████████████████████████████████████████▒░░░░░░░░░░░░░░░░░░░░░░░░▓▒░░░░░░░░▓▓████████████████████████████████████▓░░░░░░░░▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓░░░░░░░░░░░▒███████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████                                    \n                                                                                 ██████████████████████████████████████████▓░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░░░░░░░▒░░░▓███████████████████████████████████▓░░░░░░░░░██▒▒▒▒▒▒▒▒▒▒▓▒▒░░░░░░░░░░░▒█████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████████                                    \n                                                                                ███████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░░░░░░▒█▒░▓▒░░▒███████████████████████████████████▒░░░░░░░░▒█▒▒▒▒▒▓▓░░░░░░░░░░░░░░▓██████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████                                    \n                                                                               ███████████████████████████████████████████▒░░░░░░░▒▒▒▒▓▓▓▓▓▒▓▒░░░▒▒░░░░░░░░▓▒░░░▒▓░░░░▓██████████████████████████████████░░░░░░░░░▒▓▓▓░░░░░░░░░░░░░░▒█████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████                                   \n                                                                              ████████████████████████████████████████████▒░░░░░▒▓░░░░░░░░░░░░░░▒▒░░░░░░░░░▓░░░░░░▒▒░░░░░▒▓▓██████████████████████████████▓░░░░░░▒▒░░░░░░░░░░░░░░▒▓█████████████████████████████████▓▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████                                  \n                                                                            ██████████████████████████████████████████████░░░░░░▓░░░░░░░░░░░░░░░▒░░░░░░░░░▒▓░░░░░░░░▒▒░░░░░░░░▒█████████████████████████████▒░▒▒░░░░░░░░░░░░░░▒████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████████████████████████████████████████████████████████████                                 \n                                                                           ██████████████████████████████████████████████░░░░░░▓░░░░░░░░░░░░░░▓▒░░░░░░░░░░█▒░░░░░░░░░░░▓▒░░░░░░░▒░░▒█████████████████████████▓░░░░░░░░░░░░░▒████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████████████                                \n                                                                         ███████████████████████████████████████████████▒░░░░░▒▒░░░░░░░░░░░░░▓▒░░░░░░░░░░▓█▒░░░░░░░░░░░░░░▒▒▓▓▓▓▒░░▒▓██████████████████████████▓░░░░░░░░░▓█████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████████████                                \n                                                                        ███████████████████████████████████████████████▓░░░░░░▒░░░░░░░░░░░░▒▓░░░░░░░░░░░▒███▓▓▓▒░░░░░░░░░░░░▒▒░░▒▒▓▓█████████████████████████████▓░░░░▓███████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████████████████████████████████████                               \n                                                                       ████████████████████████████████████████████████▒░░░░░▒▒░░░░░░░░░░░▓▒░░░░░░░░░░░░▓████████▒░░░░░░░░░░░▒▓░▒▒▒░░░███████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓█████████████████████████████████████████████████████████████████████                              \n                                                                     █████████████████████████████████████████████████░░░░░░░▓░░░░░░░░░░░░░░░░░░░░░░░░░▒███████████▒░░░░░░░░░░░▒░░░░░▒██████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████                              \n                                                                     ████████████████████████████████████████████████▒▒░░░░░▓░░░░░░░░░░░░░░░░░░░░░░░░░░▓█████████▓▒▒██▓░░░░░░░░░░░░▒▓██████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████████████████████████████████████████                             \n                                                                    ███████████████████████████████████████████████▓▓░░░░░░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░▒█████████▒▒▒▒▒▒▓███▓█▓▓████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████████████████████████████████████████████                            \n                                                                    ██████████████████████████████████████████████▓▓▒░░░░░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒██████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████████                             \n                                                                   ████████████████████████████████████████████████▒░░░░░░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒▓██████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████████████████████                            \n                                                                 █████████████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████████████████████████████████████████████████                           \n                                                                ████████████████████████████████████████████████▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████████████████████████                          \n                                                               ████████████████████████████████████████████████▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▒▒▒▒▒▒▒▒▒▒▒▒████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████████████████                         \n                                                              ███████████████████████████████████████████████▓▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒█▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████████████████████████ ██ ███                        \n                                                             ███████████████████████████████████████████████▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████████████████████████████████████████████████████  ██                       \n                                                           ███████████████████████████████████████████████▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████████████████████████████████████████████████ ██                           \n                                                          ██████████████████████████████████████████████▓░▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒█▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████████████████████████ ████                         \n                                                         ██████████████████████████████████████████████▓▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓█▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████████████████ ██                          \n                                                       ██████████████████████████████████████████████▓▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████████████████████████████████████ ████                        \n                                                      █████████████████████████████████████████████▓░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████████████████████████████████████    ██                 ██\n                                                     █████████████████████████████████████████████▒░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████████████████████████████                ███▒\n                                                    █████████████████████████████████████████████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓█▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓███████████████████████████████████████████████████████████████████████████████████████████████               ███▒▒▒\n                                                  █████████████████████████████████████████████▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓██▒▒▒▒▒▒▓██████████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓███████████████████████████████████████████████████████████████████████████████████████████████              ███▒▒▒▒▒\n                                                 █████████████████████████████████████████████▒░░░░░░░░░░░░░░░░░░▒▒░░░░░░░░░░░░░░░░░░░▒▒▒██▒▒▒▒▒▒▓██████████████████████████████████████████████████████████████████████████████████████████████▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████████████████████████████████          ███▒▒▒▒▓▒▒\n                                                ████████████████████████████████████████████▒░░░░░░░░░░░░░░░░░░░░▓▒░░░░░░░░░░░░░░░░░░▒▒▒███▒▒▒▒▒███████████████████████████████████████████████████████████████████████████████████████████████▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████████████████████████████████████████████          ███▓▒▒▒▒▒▒▒▒\n                                               ███████████████████████████████████████████▒░░░░░░░░░░░░░░░░░░░░░░▒▓░░░░░░░░░░░░░░░░░▒▒▒███▒▒▒▓████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████████████████████████████████████████████ ██      ███▒▓▒▓▓▓▒▒▓█\n                                             ███████████████████████████████████████████▒░░░░░░░░░░░░░░░░░░░░░░░░░█░▒░░░░░░░░░░░░░▒▒▒▒▓██▓▓███████████████████████████████████████████████████████████████████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓█████████████████████████████████████████████████████████████████████████████████████████████████████ █    ███▓▒▒▒▒▒▒▒▓▓█ \n                                            ██████████████████████████████████████████▓░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▒▒░░░░░░░░░░░▒▒▒▒▒████████████████████████████████████████████████████████████████████████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓█▓███████████████████████████████████████████████████████████████████████████████████████████████████    ███▒▓▓▓▒▒▒▒▒▓█   \n                                           █████████████████████████████████████▓████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓█░░░░░░░░░░▒▒▒▒▒███████████████████████████████████████████████████████████████████████████████████████████████████▓▒████▓▓▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████████████████████████████████████████████████    ██▒▓▓▓▓▒▒▓▓█▓    \n                                         █████████████████████████████████████▓████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▒░▒░░░░░░░░▒▒▒▒▒█████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▓▓█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████████████████████████████████████████████████████████ ███▓▓▓▓▒▓▒▒▓█  ▓▓  \n                                        █████████████████████████████████████████▓░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒░░░░░░▒▒▓▓▓▓▒▒▒▒████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▓▓▓▒▓█▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓█████████████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▓▓▓▓▓▓▓█   ▓   \n                                       ████████████████████████████████████▒███▓░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░▒▒▒▒▒▓▓████████▓▒▓████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▓▒█▒▒██▓▒▓█▓▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██████████████████████████████████████████████████████████████████████████████████████████████████████▓▓██▓▓▒▒▓▓▓▓▒██        \n                                     █████████████████████████████████████▓███▒░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▓▓▓██████████████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▓▒▒▓█▓▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▓█▓▓▓▒▓▒▒▒▒▒▓▓█         \n                                    ████████████████████████████████████▓▒▒░▒░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▓▓▒▓██████████████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒█▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓█████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒█▓▓▓▒▒▒▒▒▒▓██          \n                                   █████████████████████████████████▒██░▓░░░░░░░░░░░░░░░░░░░░░░░░▒▓█▒░▒▒▒▒█████████████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▒▓▓▓▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓▓▒▒▒▒█▓            \n                                 ██████████████████████████████████▓█▓▒▒░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒░▒▒▒▒▒████████████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▒▓▓▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓██████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▒▒▓▓▓█████         \n                                █████████████████████████████████▓██▒▓░░░░░░░░░░░░░░░░░▒░░░░░░░░▒▒▓▓▓▓███████████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒█████████████████████████████████████████████████████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒███▒▒▒▒▒▒▒▒▓▓▓███▓   \n                               █████████████████████████████████▒█▒▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▒▓▓████████████████████████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▒▓▒▒███▒▒▒▓▓▓▓▓▓▓▓▓▓▓▒▒██████████████████████████████████████████████████████████████████████████████████▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓██\n                              ████████████████████████████████▓██▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓▒▓▓███████████████████████████████████████████████████████████████████████████████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓█████████████████████████▓█████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▒▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n                             ███████████████████████████████▓▓█▒▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▒▓███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▓██▓▒▒▒▓▓████████████▓▓▓██████████████████████████████████████████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▒▒▒███▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n                              ████████████████████████████▓▒█▓▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▒▓▒██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒▒▒▓▒▓▓▒▒███▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████▓▒▒▒▒███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n                              ███████████████████████████▓▓▓░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▒▒█▓▓█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓█▒▓▓▓▓▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████████████████▓▒▒▒▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████▓███▒▒▒▓▓▓▓▓▓▓▓▓▓▓\n                                ███████████████████████▓▓█▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▒▓█▓▓▓████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▓▒▒▓█▓▒▒▒▒▒▒▒▓▓▓▒▒▒▒▒▒▒▒▒▓██▓▒▒▓▓█▒▓▓▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒████████████████████████████████████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████▓▒▒▒▓▓▓▓▓▓▓▒▓\n                                 █████████████████████▓█▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▒▓██▒▓▒█████████████████████████████████████████████████████████████████████████████████████████████████████▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▓▓▓▓▓█████▓▓▓▓▓▒▒▒▒▒▒▒▒▒██▒▒▒▒▒▒▒▓▒▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒██████████████████████████████████████████████████████████▓▒▒▒▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████████████████████████████▒▓▓▒▒▓▓▓▓▓▒▒\n                               ███████████████████████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▓███▒▓▒▓█████████████████████████████████████████████████████████████████████████████████████████████▓▓██████████████████▓▓▓▓▒▒▒▒▒▒▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓█▒▒▒▒▒▓▒▒█▓██████▓▓▒▒▓▒▒▒████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████▓▒▒▒▒▓▓▓▓▓▒\n                            ██████████████████████▓▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒███▓▓▓▒▓████████████████████████████████████████████████████████████████████████████████████▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▓▓██████████████████████████████████████████████▓▒▒▒▒▒▓▒▓\n                         ███████████████████████▓█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██▓▒▓▓▓▒████████████████████████████████████████████████████████████████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████ ██▓▒▒▒▒▒▒\n                        ████ ██████████████████▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓██▒▒▓▓▓▓███████████████████████████████████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████████████████████████  █▓▒▒▒▒▒\n                       ████ ██████████████████▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒██▓▒▒▒▓▓▓████████████████████████████████████████████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████   ███▓▒▓\n                       ██████████████████████▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓█▓▒░░▓▓▓▒████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████     ███\n                        ████████████████████▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒██░░░░▒█▒▓██▓█████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████████████████████████       █\n                        ███████████████████▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒█▒░░░░▒█▒▓██▒███████████████████████████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████████       \n                         █████████████████░█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓▒██▓▒██████████████████████████████████████▓▓▒▓▒▒▓▒▒▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓████████████████████████████████████████████████████████       \n                     ██  ████████████████▒▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▓██▓▓▒█████████████████████████████████████▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓█████████████████████████████████████████████████████████      \n                     ██  ███████████████▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒░▒███▒▒▓▓██████████████████████████████████████▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓█████████████████████████████████████████████████████████     \n                     ███ ██████████████░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▒██▓▒▓▒███████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓██████████████████████████████████████████████████████████    \n                      ██ █████████████▓░▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▒██▓▓▓▒▓███████████████████████████████████████▓▓▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓█████▓▓▓████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒██▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓███▓█████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓█▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒██▓██████████████████████████████████████████████████████████    \n                      ██ ██████████████▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▓▓▓██▓▓▒▓█████████████████████████████████████████▒▓▓▓▒▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓█▓▓▓▓▓▓▓▓▓████████▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓███████████████████████████████████████████████████████████    \n                      █████████████████▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▓▓▓█▓▒▓███████████████████████████████████████████▓▓▓▓▒▒▓▓▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████████████████████████████   \n                      ██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓█▓▒▓████████████████████████████████████████████▓▓▓▒▓▒▒▓▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▓█████████████████████████████████████████████████████████████  \n                      ██████████████████▒░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒█▓▓▓█▓████████████████████████████████████████████▓▓▓▓▓▒█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▓█████████████████████████████████████████████████████████████  \n                      ██████████████████▒░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▓▓▓▒█▓█████████████████████████████████████████████▓▓▓▓▓▒█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓███████████████████████████████████████████████████████████ \n                      ██████████████████▓░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒█▓▒█▓▓██████████████████████████████████████████████▓▓▓▓▓█▓▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓████████████████████████████████████████████████████████████\n                      ███████████████████▒░░▒░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒█▒▓█▒███████████████████████████████████████████████▓▒▓▓▓▓█▓▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▓█████████████████████████████████████████████████████████████\n                      ████████████████████▒░▒░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒█▓▓█▓█████████████████████████████████████████████████▓▓▓▓▓█▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▓▓▓███████████████████████████████████████████████████████████\n                      █████████████████████░▒░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▓▓████▓████████████████████████████████████████████████▓▓▓▓█▓▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒█▓█▓▓███████████████████████████████████████████████████████████\n                    ███████████████████████░▒▒░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▓███▓▓▓▓█████████████████████████████████████████████████▓▒███▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓█▓▓███████████████████████████████████████████████████████████\n                     █ ████████████████████▒▒▒░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▓▓▓█▓▒▒▓██████████████████████████████████████████████████▓▓▓██▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▓▓▒█▒▓███████████████████████████████████████████████████████████\n                       ████████████████████▓▒▒░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▓██▒▒▒████████████████████████████████████████████████████▓▓███▒▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒█▓▒▒▒▓███████████████████████████████████████████████████████████\n                       █████████████████████▒▒░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▓██▒▒▒▓█████████████████████████████████████████████████████▓███▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒██▒▒▒▓███████████████████████████████████████████████████████████\n                       █████████████████████▓▒░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒█▓▒▒▒▓█▓▓███████████████████████████████████████████████████████▓▒▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▓▓▓▒▒▒████████████████████████████████████████████████████████████\n                       ██████████████████████▒░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒██▒▓▒▒██▓█████████████████████████████████████████████████████████▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▓████████████████████████████████████████████████████████████\n                       ██████████████████████▓░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▒▒▒████████████████████████████████████████████████████████████▓▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▓████████████████████████████████████████████████████████████\n                       ███████████████████████░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▓█▒▓▒▒▒▓████████████████████████████████████████████████████████████▓▒▒▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████████████████████████████\n                        ██████████████████████░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▓█▒▓▒▒▒███████████████████████████████████████████████████████████████▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████\n                        ██████████████████████░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▒▒▓█████████████████████████████████████████████████████████████████▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████\n                         █████████████████████▒░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▓██▒▓████████████████████████████████████████████████████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████\n                         █████████████████████▓░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▓█▓▒███████████████████████████████████████████████████████████████████████▒▓▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████\n                         ██████████████████████░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒█▓▓████████████████████████████████████████████████████████████████████████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████\n                        ███████████████████████▒░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒█▓▓██████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████\n                         ██████████████████████▓░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒██▓█▓█████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒▓▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▓█████████████████████████████████████████████████████████\n                          ██████████████████████▒░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒█▓▓▓██████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▓▒▒▒▒▒▒▓▒▒▒▒▓▒▒▒▒▒█████████████████████████████████████████████████████████\n                          ██████████████████████▓░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████████▓▓▓▓▓▓▓█▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▓▓████████████████████████████████████████████████████████\n                           ███████████████████████░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████████████████▓▓▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▓████████████████████████████████████████████████████████\n                           ███████████████████████▓░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓██████▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▒████████████████████████████████████████████████████████\n                            ███████████████████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▓██▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓█████████████▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒████████████████████████████████████████████████████████\n                             ████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████████████████████████████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓█████████▓▒▒▒▒▒▓████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒████████████████████████████████████████████████████████\n                             █████████████████████████▓▒▒▒▒▒▒▒▒▒▒██████████████████████████████████████████████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▒▒▒▒▓████████▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒████████████████████████████████████████████████████████",
+      "properties": {
+        "fontSize": 2,
+        "fontFamily": "monospace",
+        "fontColor": "#6366F1",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "angle": 0,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    }
+  ],
+  "links": [
+    [
+      195,
+      25,
+      0,
+      223,
+      0,
+      "INT"
+    ],
+    [
+      196,
+      25,
+      1,
+      223,
+      1,
+      "INT"
+    ],
+    [
+      197,
+      26,
+      0,
+      223,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      198,
+      27,
+      0,
+      223,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      199,
+      223,
+      0,
+      26,
+      0,
+      "CLIP"
+    ],
+    [
+      200,
+      223,
+      0,
+      27,
+      0,
+      "CLIP"
+    ],
+    [
+      203,
+      223,
+      1,
+      229,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 43,
+      "title": "dark HUB - Flux NSFW",
+      "bounding": [
+        1628.4410584172053,
+        821.7405411749086,
+        1701.6301343159796,
+        917.770743454956
+      ],
+      "color": "#534AB7",
+      "font_size": 20,
+      "flags": {}
+    },
+    {
+      "id": 36,
+      "title": "Prompt",
+      "bounding": [
+        2100.448585506128,
+        1100.0516822496115,
+        380.4820988511972,
+        610.0782709815089
+      ],
+      "color": "#0F6E56",
+      "font_size": 20,
+      "flags": {}
+    },
+    {
+      "id": 37,
+      "title": "Aspect-Ratio",
+      "bounding": [
+        2100.2018799355947,
+        880.784919910105,
+        379.81960508101156,
+        200.0115969605448
+      ],
+      "color": "#444",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 39,
+      "title": "Download",
+      "bounding": [
+        2889.369007434642,
+        1099.851191269634,
+        421.153197762736,
+        611.2548338652059
+      ],
+      "color": "#534AB7",
+      "font_size": 20,
+      "flags": {}
+    },
+    {
+      "id": 38,
+      "title": "PNG",
+      "bounding": [
+        2899.202308286243,
+        1139.2718440669828,
+        400.23795766797366,
+        560.253507481046
+      ],
+      "color": "#88A",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 44,
+      "title": "Telegram Channels",
+      "bounding": [
+        2890.3153949853945,
+        880.8139056170161,
+        419.92186592433245,
+        198.71162474521054
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "9bc375cd-ee33-45eb-a435-6c12370b2664",
+        "version": 1,
+        "state": {
+          "lastGroupId": 44,
+          "lastNodeId": 231,
+          "lastLinkId": 217,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "Backend",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            2086.644940684468,
+            813.8956660204852,
+            120,
+            120
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            3869.8954926007755,
+            833.8956660204852,
+            120,
+            100
+          ]
+        },
+        "inputs": [
+          {
+            "id": "ec8a8d9f-880c-4282-a65c-c23120a1472c",
+            "name": "width",
+            "type": "INT",
+            "linkIds": [
+              36
+            ],
+            "localized_name": "width",
+            "color_on": "#FFB7C5",
+            "pos": [
+              2186.644940684468,
+              833.8956660204852
+            ]
+          },
+          {
+            "id": "d982e7a1-b56d-424c-a75f-52fae0feb7eb",
+            "name": "height",
+            "type": "INT",
+            "linkIds": [
+              37
+            ],
+            "localized_name": "height",
+            "color_on": "#FFB7C5",
+            "pos": [
+              2186.644940684468,
+              853.8956660204852
+            ]
+          },
+          {
+            "id": "9714da4b-01ed-4a6c-8339-2e459dfb0153",
+            "name": "positive",
+            "type": "CONDITIONING",
+            "linkIds": [
+              31
+            ],
+            "localized_name": "positive",
+            "color_on": "#FFB6C1",
+            "pos": [
+              2186.644940684468,
+              873.8956660204852
+            ]
+          },
+          {
+            "id": "3e26783d-63cb-4678-9d17-d4541f06edbf",
+            "name": "negative",
+            "type": "CONDITIONING",
+            "linkIds": [
+              32,
+              6
+            ],
+            "localized_name": "negative",
+            "color_on": "#FFB6C1",
+            "pos": [
+              2186.644940684468,
+              893.8956660204852
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "54707563-4b6e-46d0-943a-8d2ec47d5c3f",
+            "name": "CLIP",
+            "type": "CLIP",
+            "linkIds": [
+              39
+            ],
+            "localized_name": "CLIP",
+            "color_on": "#FF007F",
+            "pos": [
+              3889.8954926007755,
+              853.8956660204852
+            ]
+          },
+          {
+            "id": "6603285d-4e5f-4f07-afd0-d8d6a0220659",
+            "name": "IMAGE",
+            "type": "IMAGE",
+            "linkIds": [
+              17
+            ],
+            "localized_name": "IMAGE",
+            "color_on": "#FF69B4",
+            "pos": [
+              3889.8954926007755,
+              873.8956660204852
+            ]
+          },
+          {
+            "id": "992a71f1-7ea2-4c2d-8072-af695bf07525",
+            "name": "LATENT",
+            "type": "LATENT",
+            "linkIds": [],
+            "pos": [
+              3889.8954926007755,
+              893.8956660204852
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 17,
+            "type": "VAEDecode",
+            "pos": [
+              3159.764803211182,
+              808.9124060691314
+            ],
+            "size": [
+              238.757421875,
+              46
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 18,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF1493",
+                "localized_name": "samples",
+                "name": "samples",
+                "type": "LATENT",
+                "link": 28
+              },
+              {
+                "color_on": "#DB7093",
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 29
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "slot_index": 0,
+                "links": [
+                  1
+                ]
+              }
+            ],
+            "title": "🖼️ VAE Decode",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "VAEDecode",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 19,
+            "type": "UltralyticsDetectorProvider",
+            "pos": [
+              2617.3417190327245,
+              805.6480008782038
+            ],
+            "size": [
+              472.61098666725036,
+              78
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "color_on": "#FF1493",
+                "localized_name": "BBOX_DETECTOR",
+                "name": "BBOX_DETECTOR",
+                "type": "BBOX_DETECTOR",
+                "links": [
+                  7
+                ]
+              },
+              {
+                "color_on": "#C71585",
+                "localized_name": "SEGM_DETECTOR",
+                "name": "SEGM_DETECTOR",
+                "type": "SEGM_DETECTOR",
+                "links": null
+              }
+            ],
+            "title": "Face Detect",
+            "properties": {
+              "cnr_id": "comfyui-impact-subpack",
+              "ver": "1.3.5",
+              "Node name for S&R": "UltralyticsDetectorProvider",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "bbox/face_yolov8m.pt"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 20,
+            "type": "UltralyticsDetectorProvider",
+            "pos": [
+              2617.8271106801317,
+              926.7340096851831
+            ],
+            "size": [
+              473.33446120159977,
+              78
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "color_on": "#FF1493",
+                "localized_name": "BBOX_DETECTOR",
+                "name": "BBOX_DETECTOR",
+                "type": "BBOX_DETECTOR",
+                "links": [
+                  24
+                ]
+              },
+              {
+                "color_on": "#C71585",
+                "localized_name": "SEGM_DETECTOR",
+                "name": "SEGM_DETECTOR",
+                "type": "SEGM_DETECTOR",
+                "links": null
+              }
+            ],
+            "title": "Hand Detect",
+            "properties": {
+              "cnr_id": "comfyui-impact-subpack",
+              "ver": "1.3.5",
+              "Node name for S&R": "UltralyticsDetectorProvider",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "bbox/hand_yolov8s.pt"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 16,
+            "type": "UltralyticsDetectorProvider",
+            "pos": [
+              2617.766997778155,
+              1042.3048709056845
+            ],
+            "size": [
+              473.46459691030066,
+              78
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "color_on": "#FF1493",
+                "localized_name": "BBOX_DETECTOR",
+                "name": "BBOX_DETECTOR",
+                "type": "BBOX_DETECTOR",
+                "links": null
+              },
+              {
+                "color_on": "#C71585",
+                "localized_name": "SEGM_DETECTOR",
+                "name": "SEGM_DETECTOR",
+                "type": "SEGM_DETECTOR",
+                "links": [
+                  9
+                ]
+              }
+            ],
+            "title": "Body Segment",
+            "properties": {
+              "cnr_id": "comfyui-impact-subpack",
+              "ver": "1.3.5",
+              "Node name for S&R": "UltralyticsDetectorProvider",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "segm/person_yolov8m-seg.pt"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 18,
+            "type": "SAMLoader",
+            "pos": [
+              2617.205446660222,
+              1160.850411272474
+            ],
+            "size": [
+              473.94733390561487,
+              82
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 3,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "SAM_MODEL",
+                "name": "SAM_MODEL",
+                "type": "SAM_MODEL",
+                "links": [
+                  8,
+                  25
+                ]
+              }
+            ],
+            "title": "SAM Model",
+            "properties": {
+              "cnr_id": "comfyui-impact-pack",
+              "ver": "8.28.2",
+              "Node name for S&R": "SAMLoader",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "sam_vit_b_01ec64.pth",
+              "AUTO"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 2,
+            "type": "CLIPTextEncode",
+            "pos": [
+              3128.9286720502214,
+              1050.5891917817435
+            ],
+            "size": [
+              373.2290834198384,
+              88
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF007F",
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 10
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FFB6C1",
+                "localized_name": "CONDITIONING",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "slot_index": 0,
+                "links": [
+                  5,
+                  22
+                ]
+              }
+            ],
+            "title": "Hand Fix — Positive",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "CLIPTextEncode",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "detailed hand, detailed fingers, detailed fingernails, woman hand, natural skin texture, five fingers, correct anatomy, realistic hand"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 14,
+            "type": "CLIPTextEncode",
+            "pos": [
+              3129.3434385673636,
+              1177.7422682792603
+            ],
+            "size": [
+              372.89196645780294,
+              88
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF007F",
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 26
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FFB6C1",
+                "localized_name": "CONDITIONING",
+                "name": "CONDITIONING",
+                "type": "CONDITIONING",
+                "slot_index": 0,
+                "links": [
+                  23
+                ]
+              }
+            ],
+            "title": "Hand Fix — Negative",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "CLIPTextEncode",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "bad hands, extra fingers, missing fingers, fused fingers, too many fingers, six fingers, four fingers, mutated hands, deformed fingers, long fingers, extra digit, fewer digits, cropped fingers, poorly drawn hands, malformed hands"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 13,
+            "type": "FaceDetailer",
+            "pos": [
+              3391.847647378332,
+              1308.4150801218082
+            ],
+            "size": [
+              479.9487822547417,
+              1019.6844663709553
+            ],
+            "flags": {
+              "collapsed": true
+            },
+            "order": 17,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 18
+              },
+              {
+                "color_on": "#C71585",
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 19
+              },
+              {
+                "color_on": "#FF007F",
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 20
+              },
+              {
+                "color_on": "#DB7093",
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 21
+              },
+              {
+                "color_on": "#FFB6C1",
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "CONDITIONING",
+                "link": 22
+              },
+              {
+                "color_on": "#FFB6C1",
+                "localized_name": "negative",
+                "name": "negative",
+                "type": "CONDITIONING",
+                "link": 23
+              },
+              {
+                "color_on": "#FF1493",
+                "localized_name": "bbox_detector",
+                "name": "bbox_detector",
+                "type": "BBOX_DETECTOR",
+                "link": 24
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "sam_model_opt",
+                "name": "sam_model_opt",
+                "shape": 7,
+                "type": "SAM_MODEL",
+                "link": 25
+              },
+              {
+                "color_on": "#C71585",
+                "localized_name": "segm_detector_opt",
+                "name": "segm_detector_opt",
+                "shape": 7,
+                "type": "SEGM_DETECTOR",
+                "link": null
+              },
+              {
+                "localized_name": "detailer_hook",
+                "name": "detailer_hook",
+                "shape": 7,
+                "type": "DETAILER_HOOK",
+                "link": null
+              },
+              {
+                "localized_name": "scheduler_func_opt",
+                "name": "scheduler_func_opt",
+                "shape": 7,
+                "type": "SCHEDULER_FUNC",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "links": [
+                  12
+                ]
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "cropped_refined",
+                "name": "cropped_refined",
+                "shape": 6,
+                "type": "IMAGE",
+                "links": []
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "cropped_enhanced_alpha",
+                "name": "cropped_enhanced_alpha",
+                "shape": 6,
+                "type": "IMAGE",
+                "links": null
+              },
+              {
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "links": null
+              },
+              {
+                "localized_name": "detailer_pipe",
+                "name": "detailer_pipe",
+                "type": "DETAILER_PIPE",
+                "links": null
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "cnet_images",
+                "name": "cnet_images",
+                "shape": 6,
+                "type": "IMAGE",
+                "links": null
+              }
+            ],
+            "title": "Hand Fix",
+            "properties": {
+              "cnr_id": "comfyui-impact-pack",
+              "ver": "8.28.2",
+              "Node name for S&R": "FaceDetailer",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              512,
+              true,
+              1024,
+              1012952768929789,
+              "randomize",
+              8,
+              2,
+              "dpmpp_2m",
+              "karras",
+              0.25,
+              20,
+              true,
+              true,
+              0.5,
+              70,
+              3,
+              "center-1",
+              0,
+              0.93,
+              0,
+              0.7,
+              "False",
+              10,
+              "",
+              1,
+              false,
+              20,
+              false,
+              false
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 7,
+            "type": "ImageScaleBy",
+            "pos": [
+              3538.7048739689044,
+              986.6336346083622
+            ],
+            "size": [
+              263.56422653344623,
+              82
+            ],
+            "flags": {},
+            "order": 15,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 14
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  13
+                ]
+              }
+            ],
+            "title": "Downscale (0.5 = 2x final)",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "ImageScaleBy",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "nearest-exact",
+              0.5
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 8,
+            "type": "ImageUpscaleWithModel",
+            "pos": [
+              3538.70483280844,
+              896.4921676772242
+            ],
+            "size": [
+              263.96227652328434,
+              46
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 16,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "upscale_model",
+                "name": "upscale_model",
+                "type": "UPSCALE_MODEL",
+                "link": 15
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 16
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  14
+                ]
+              }
+            ],
+            "title": "4x Upscale",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "ImageUpscaleWithModel",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 5,
+            "type": "UpscaleModelLoader",
+            "pos": [
+              3539.1764462369792,
+              795.1222520526708
+            ],
+            "size": [
+              262.57124580244044,
+              58
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 4,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "UPSCALE_MODEL",
+                "name": "UPSCALE_MODEL",
+                "type": "UPSCALE_MODEL",
+                "links": [
+                  15
+                ]
+              }
+            ],
+            "title": "Upscale Model (4x)",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "UpscaleModelLoader",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "4x-UltraSharp.pth"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 3,
+            "type": "ImageSharpen",
+            "pos": [
+              3539.3014100384494,
+              646.8152625101127
+            ],
+            "size": [
+              263.06950136020623,
+              106
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 11
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  16
+                ]
+              }
+            ],
+            "title": "Pre-Sharpen",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "ImageSharpen",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              1,
+              0.26,
+              0.15
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 4,
+            "type": "FL_ImageAddNoise",
+            "pos": [
+              3539.289890569119,
+              498.08973217972965
+            ],
+            "size": [
+              262.0377217072305,
+              106
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 12
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  11
+                ]
+              }
+            ],
+            "title": "Film Grain",
+            "properties": {
+              "cnr_id": "comfyui_fill-nodes",
+              "ver": "2.3.4",
+              "Node name for S&R": "FL_ImageAddNoise",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              996061399197328,
+              "randomize",
+              0.02
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 6,
+            "type": "ImageSharpen",
+            "pos": [
+              3538.9974584097217,
+              1115.8657674118467
+            ],
+            "size": [
+              263.4010223031487,
+              106
+            ],
+            "flags": {},
+            "order": 14,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 13
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  17
+                ]
+              }
+            ],
+            "title": "Post-Sharpen",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "ImageSharpen",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              1,
+              0.45,
+              0.15
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 15,
+            "type": "VAEEncode",
+            "pos": [
+              2277.5912138602584,
+              779.0623814352303
+            ],
+            "size": [
+              303.5305773121195,
+              46
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "pixels",
+                "name": "pixels",
+                "type": "IMAGE",
+                "link": null
+              },
+              {
+                "color_on": "#DB7093",
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 27
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF1493",
+                "localized_name": "LATENT",
+                "name": "LATENT",
+                "type": "LATENT",
+                "slot_index": 0,
+                "links": null
+              }
+            ],
+            "title": "VAE Encode (img2img)",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "VAEEncode",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": []
+          },
+          {
+            "id": 9,
+            "type": "PrimitiveNode",
+            "pos": [
+              2277.8711993224124,
+              499.99912527476397
+            ],
+            "size": [
+              301.3983321391247,
+              82
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "color_on": "#FFB7C5",
+                "name": "INT",
+                "type": "INT",
+                "widget": {
+                  "name": "batch_size"
+                },
+                "links": [
+                  38
+                ]
+              }
+            ],
+            "title": "Batch Count",
+            "properties": {
+              "Run widget replace on values": false,
+              "Node name for S&R": "PrimitiveNode",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              10,
+              "fixed"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 21,
+            "type": "KSampler",
+            "pos": [
+              3128.5402445494733,
+              499.3117093186426
+            ],
+            "size": [
+              373.0185900047504,
+              502.67055645142796
+            ],
+            "flags": {},
+            "order": 19,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#C71585",
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 30
+              },
+              {
+                "color_on": "#FFB6C1",
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "CONDITIONING",
+                "link": 31
+              },
+              {
+                "color_on": "#FFB6C1",
+                "localized_name": "negative",
+                "name": "negative",
+                "type": "CONDITIONING",
+                "link": 32
+              },
+              {
+                "color_on": "#FF1493",
+                "localized_name": "latent_image",
+                "name": "latent_image",
+                "type": "LATENT",
+                "link": 33
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF1493",
+                "localized_name": "LATENT",
+                "name": "LATENT",
+                "type": "LATENT",
+                "slot_index": 0,
+                "links": [
+                  28,
+                  205
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "KSampler",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              177266023560292,
+              "randomize",
+              8,
+              1,
+              "lcm",
+              "karras",
+              0.9
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 1,
+            "type": "FaceDetailer",
+            "pos": [
+              3129.3534614554464,
+              1307.9304199463463
+            ],
+            "size": [
+              406.2918039975116,
+              960
+            ],
+            "flags": {
+              "collapsed": true
+            },
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 1
+              },
+              {
+                "color_on": "#C71585",
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 2
+              },
+              {
+                "color_on": "#FF007F",
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 3
+              },
+              {
+                "color_on": "#DB7093",
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 4
+              },
+              {
+                "color_on": "#FFB6C1",
+                "localized_name": "positive",
+                "name": "positive",
+                "type": "CONDITIONING",
+                "link": 5
+              },
+              {
+                "color_on": "#FFB6C1",
+                "localized_name": "negative",
+                "name": "negative",
+                "type": "CONDITIONING",
+                "link": 6
+              },
+              {
+                "color_on": "#FF1493",
+                "localized_name": "bbox_detector",
+                "name": "bbox_detector",
+                "type": "BBOX_DETECTOR",
+                "link": 7
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "sam_model_opt",
+                "name": "sam_model_opt",
+                "shape": 7,
+                "type": "SAM_MODEL",
+                "link": 8
+              },
+              {
+                "color_on": "#C71585",
+                "localized_name": "segm_detector_opt",
+                "name": "segm_detector_opt",
+                "shape": 7,
+                "type": "SEGM_DETECTOR",
+                "link": 9
+              },
+              {
+                "localized_name": "detailer_hook",
+                "name": "detailer_hook",
+                "shape": 7,
+                "type": "DETAILER_HOOK",
+                "link": null
+              },
+              {
+                "localized_name": "scheduler_func_opt",
+                "name": "scheduler_func_opt",
+                "shape": 7,
+                "type": "SCHEDULER_FUNC",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "links": [
+                  18
+                ]
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "cropped_refined",
+                "name": "cropped_refined",
+                "shape": 6,
+                "type": "IMAGE",
+                "links": []
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "cropped_enhanced_alpha",
+                "name": "cropped_enhanced_alpha",
+                "shape": 6,
+                "type": "IMAGE",
+                "links": null
+              },
+              {
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "links": null
+              },
+              {
+                "localized_name": "detailer_pipe",
+                "name": "detailer_pipe",
+                "type": "DETAILER_PIPE",
+                "links": null
+              },
+              {
+                "color_on": "#FF69B4",
+                "localized_name": "cnet_images",
+                "name": "cnet_images",
+                "shape": 6,
+                "type": "IMAGE",
+                "links": null
+              }
+            ],
+            "title": "Face Fix",
+            "properties": {
+              "cnr_id": "comfyui-impact-pack",
+              "ver": "8.28.2",
+              "Node name for S&R": "FaceDetailer",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              896,
+              true,
+              1536,
+              743249943783116,
+              "randomize",
+              12,
+              1,
+              "lcm",
+              "exponential",
+              0.5,
+              15,
+              true,
+              false,
+              0.25,
+              10,
+              3,
+              "center-1",
+              0,
+              0.9,
+              0,
+              0.7,
+              "False",
+              10,
+              "",
+              1,
+              false,
+              100,
+              false,
+              false
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 24,
+            "type": "EmptyLatentImage",
+            "pos": [
+              2278.9554298526596,
+              630.0203974541379
+            ],
+            "size": [
+              300.7642710804007,
+              106
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 20,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#FFB7C5",
+                "localized_name": "width",
+                "name": "width",
+                "type": "INT",
+                "widget": {
+                  "name": "width"
+                },
+                "link": 36
+              },
+              {
+                "color_on": "#FFB7C5",
+                "localized_name": "height",
+                "name": "height",
+                "type": "INT",
+                "widget": {
+                  "name": "height"
+                },
+                "link": 37
+              },
+              {
+                "color_on": "#FFB7C5",
+                "localized_name": "batch_size",
+                "name": "batch_size",
+                "type": "INT",
+                "widget": {
+                  "name": "batch_size"
+                },
+                "link": 38
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#FF1493",
+                "localized_name": "LATENT",
+                "name": "LATENT",
+                "type": "LATENT",
+                "slot_index": 0,
+                "links": [
+                  33
+                ]
+              }
+            ],
+            "title": "Empty Latent (txt2img)",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "EmptyLatentImage",
+              "ue_properties": {
+                "widget_ue_connectable": {
+                  "width": true,
+                  "height": true,
+                  "batch_size": true
+                },
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              896,
+              1536,
+              10
+            ]
+          },
+          {
+            "id": 22,
+            "type": "CheckpointLoaderSimple",
+            "pos": [
+              2618.4850178242336,
+              498.90714097134196
+            ],
+            "size": [
+              472.5534565305725,
+              98
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "color_on": "#C71585",
+                "localized_name": "MODEL",
+                "name": "MODEL",
+                "type": "MODEL",
+                "slot_index": 0,
+                "links": [
+                  34
+                ]
+              },
+              {
+                "color_on": "#FF007F",
+                "localized_name": "CLIP",
+                "name": "CLIP",
+                "type": "CLIP",
+                "slot_index": 1,
+                "links": [
+                  35
+                ]
+              },
+              {
+                "color_on": "#DB7093",
+                "localized_name": "VAE",
+                "name": "VAE",
+                "type": "VAE",
+                "slot_index": 2,
+                "links": [
+                  4,
+                  21,
+                  27,
+                  29
+                ]
+              }
+            ],
+            "title": "Checkpoint",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "CheckpointLoaderSimple",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "Flux-NSFW\\gonzalomoXLFluxPony_v60PhotoXLDMD.safetensors"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 23,
+            "type": "LoraLoader",
+            "pos": [
+              2618.884216298499,
+              638.9071409713409
+            ],
+            "size": [
+              470.42711408628884,
+              126
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "color_on": "#C71585",
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 34
+              },
+              {
+                "color_on": "#FF007F",
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 35
+              }
+            ],
+            "outputs": [
+              {
+                "color_on": "#C71585",
+                "localized_name": "MODEL",
+                "name": "MODEL",
+                "type": "MODEL",
+                "slot_index": 0,
+                "links": [
+                  2,
+                  19,
+                  30
+                ]
+              },
+              {
+                "color_on": "#FF007F",
+                "localized_name": "CLIP",
+                "name": "CLIP",
+                "type": "CLIP",
+                "slot_index": 1,
+                "links": [
+                  3,
+                  10,
+                  20,
+                  26,
+                  39
+                ]
+              }
+            ],
+            "title": "NSFW-LORA",
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.15.1",
+              "Node name for S&R": "LoraLoader",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.7",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "Realism Lora By Stable Yogi_V3_Lite.safetensors",
+              0.7,
+              0.1
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          }
+        ],
+        "groups": [
+          {
+            "id": 2,
+            "title": "Stage-1",
+            "bounding": [
+              2609.2447497088574,
+              428.9071409713424,
+              491.3919033809434,
+              822.4206199717812
+            ],
+            "font_size": 22,
+            "flags": {}
+          },
+          {
+            "id": 3,
+            "title": "Stage-2",
+            "bounding": [
+              3119.764803211182,
+              428.91240606913146,
+              390.1417022686487,
+              890.511090461428
+            ],
+            "font_size": 22,
+            "flags": {}
+          },
+          {
+            "id": 4,
+            "title": "Stage-3",
+            "bounding": [
+              3529.829751828208,
+              428.7983544171804,
+              280.0034931555838,
+              801.9072069224667
+            ],
+            "font_size": 22,
+            "flags": {}
+          },
+          {
+            "id": 35,
+            "title": "Mini-Settings",
+            "bounding": [
+              2266.644940684468,
+              429.199125274764,
+              323.0234593970931,
+              403.1354806337956
+            ],
+            "color": "#3f789e",
+            "font_size": 22,
+            "flags": {}
+          }
+        ],
+        "links": [
+          {
+            "id": 28,
+            "origin_id": 21,
+            "origin_slot": 0,
+            "target_id": 17,
+            "target_slot": 0,
+            "type": "LATENT"
+          },
+          {
+            "id": 29,
+            "origin_id": 22,
+            "origin_slot": 2,
+            "target_id": 17,
+            "target_slot": 1,
+            "type": "VAE"
+          },
+          {
+            "id": 38,
+            "origin_id": 9,
+            "origin_slot": 0,
+            "target_id": 24,
+            "target_slot": 2,
+            "type": "INT"
+          },
+          {
+            "id": 27,
+            "origin_id": 22,
+            "origin_slot": 2,
+            "target_id": 15,
+            "target_slot": 1,
+            "type": "VAE"
+          },
+          {
+            "id": 34,
+            "origin_id": 22,
+            "origin_slot": 0,
+            "target_id": 23,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 35,
+            "origin_id": 22,
+            "origin_slot": 1,
+            "target_id": 23,
+            "target_slot": 1,
+            "type": "CLIP"
+          },
+          {
+            "id": 30,
+            "origin_id": 23,
+            "origin_slot": 0,
+            "target_id": 21,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 33,
+            "origin_id": 24,
+            "origin_slot": 0,
+            "target_id": 21,
+            "target_slot": 3,
+            "type": "LATENT"
+          },
+          {
+            "id": 10,
+            "origin_id": 23,
+            "origin_slot": 1,
+            "target_id": 2,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 26,
+            "origin_id": 23,
+            "origin_slot": 1,
+            "target_id": 14,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 1,
+            "origin_id": 17,
+            "origin_slot": 0,
+            "target_id": 1,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 2,
+            "origin_id": 23,
+            "origin_slot": 0,
+            "target_id": 1,
+            "target_slot": 1,
+            "type": "MODEL"
+          },
+          {
+            "id": 3,
+            "origin_id": 23,
+            "origin_slot": 1,
+            "target_id": 1,
+            "target_slot": 2,
+            "type": "CLIP"
+          },
+          {
+            "id": 4,
+            "origin_id": 22,
+            "origin_slot": 2,
+            "target_id": 1,
+            "target_slot": 3,
+            "type": "VAE"
+          },
+          {
+            "id": 5,
+            "origin_id": 2,
+            "origin_slot": 0,
+            "target_id": 1,
+            "target_slot": 4,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 7,
+            "origin_id": 19,
+            "origin_slot": 0,
+            "target_id": 1,
+            "target_slot": 6,
+            "type": "BBOX_DETECTOR"
+          },
+          {
+            "id": 8,
+            "origin_id": 18,
+            "origin_slot": 0,
+            "target_id": 1,
+            "target_slot": 7,
+            "type": "SAM_MODEL"
+          },
+          {
+            "id": 9,
+            "origin_id": 16,
+            "origin_slot": 1,
+            "target_id": 1,
+            "target_slot": 8,
+            "type": "SEGM_DETECTOR"
+          },
+          {
+            "id": 18,
+            "origin_id": 1,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 19,
+            "origin_id": 23,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 1,
+            "type": "MODEL"
+          },
+          {
+            "id": 20,
+            "origin_id": 23,
+            "origin_slot": 1,
+            "target_id": 13,
+            "target_slot": 2,
+            "type": "CLIP"
+          },
+          {
+            "id": 21,
+            "origin_id": 22,
+            "origin_slot": 2,
+            "target_id": 13,
+            "target_slot": 3,
+            "type": "VAE"
+          },
+          {
+            "id": 22,
+            "origin_id": 2,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 4,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 23,
+            "origin_id": 14,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 5,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 24,
+            "origin_id": 20,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 6,
+            "type": "BBOX_DETECTOR"
+          },
+          {
+            "id": 25,
+            "origin_id": 18,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 7,
+            "type": "SAM_MODEL"
+          },
+          {
+            "id": 14,
+            "origin_id": 8,
+            "origin_slot": 0,
+            "target_id": 7,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 15,
+            "origin_id": 5,
+            "origin_slot": 0,
+            "target_id": 8,
+            "target_slot": 0,
+            "type": "UPSCALE_MODEL"
+          },
+          {
+            "id": 16,
+            "origin_id": 3,
+            "origin_slot": 0,
+            "target_id": 8,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 11,
+            "origin_id": 4,
+            "origin_slot": 0,
+            "target_id": 3,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 12,
+            "origin_id": 13,
+            "origin_slot": 0,
+            "target_id": 4,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 13,
+            "origin_id": 7,
+            "origin_slot": 0,
+            "target_id": 6,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 36,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 24,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 37,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 24,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 31,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 21,
+            "target_slot": 1,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 32,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 21,
+            "target_slot": 2,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 6,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 1,
+            "target_slot": 5,
+            "type": "CONDITIONING"
+          },
+          {
+            "id": 39,
+            "origin_id": 23,
+            "origin_slot": 1,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 17,
+            "origin_id": 6,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 1,
+            "type": "IMAGE"
+          }
+        ],
+        "extra": {
+          "ue_links": [],
+          "links_added_by_ue": []
+        }
+      }
+    ]
+  },
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "frontendVersion": "1.41.21",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "ds": {
+      "scale": 1.1111191165562877,
+      "offset": [
+        -2018.1751405998086,
+        12.707617317934055
+      ]
+    }
+  },
+  "version": 0.4
+}
